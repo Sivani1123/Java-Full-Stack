@@ -25,7 +25,7 @@ aside{
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+    gap: 1cm;
 }
 .d1{
     background: lightpink;
