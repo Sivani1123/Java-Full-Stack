@@ -135,7 +135,7 @@ function num(n)
     num(n);
 
 }
-num(1);*/
+num(1);
 function guess(n) {
     let userGuess = Number(prompt("Enter a number:"));
 
@@ -151,4 +151,14 @@ function guess(n) {
 }
 
 let number = Math.floor(Math.random() * 100) + 1;
-guess(number);
+guess(number);*/
+let chocolate=["melody","dairymilk","fivestar","kitkat","munch"];
+let sales={
+    sivani:chocolate[0],
+    pooji:chocolate[1],
+    praisy:chocolate[2],
+    safiya:chocolate[3],
+    pooja:chocolate[4],
+    
+};
+console.log(sales);
