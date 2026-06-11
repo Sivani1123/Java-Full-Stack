@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sivani | Portfolio</title>
+  <title>M. Sivani | Resume</title>
   <style>
     :root {
       --bg: #0f172a;
@@ -179,6 +179,35 @@
       flex-wrap: wrap;
     }
 
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .detail-card {
+      padding: 12px;
+      border-radius: 14px;
+      background: rgba(148, 163, 184, 0.08);
+      border: 1px solid rgba(148, 163, 184, 0.14);
+    }
+
+    .detail-card span {
+      display: block;
+      color: var(--accent);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 4px;
+    }
+
+    .resume-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
     .chip {
       display: inline-block;
       background: rgba(52, 211, 153, 0.12);
@@ -228,9 +257,9 @@
   <main class="container" id="home">
     <section class="hero">
       <article class="card">
-        <p class="eyebrow">Software Engineering Portfolio</p>
-        <h1>Hi, I’m <span class="highlight">Sivani</span><br />B.Tech 3rd Year Student</h1>
-        <p class="subtext">I am passionate about building practical software solutions, learning modern web technologies, and creating user-friendly applications. My focus is on software engineering, problem solving, and continuous improvement.</p>
+        <p class="eyebrow">Resume & Career Profile</p>
+        <h1>Hi, I’m <span class="highlight">M. Sivani</span><br />Java Full Stack Developer</h1>
+        <p class="subtext">A motivated and hardworking student with strong communication skills, quick learning ability, and a passion for software development. I aim to build a career in full-stack development with practical, real-world solutions and continuous improvement.</p>
         <div class="btn-row">
           <a class="btn btn-primary" href="#contact">Contact Me</a>
           <button class="btn btn-secondary" id="themeBtn" type="button">Try a quick highlight</button>
@@ -238,46 +267,68 @@
       </article>
 
       <aside class="card mini-grid">
-        <div class="stat"><strong>Degree</strong>B.Tech 3rd Year</div>
-        <div class="stat"><strong>Focus</strong>Software Engineering & Web Development</div>
-        <div class="stat"><strong>Goal</strong>Build real-world applications and grow as a developer</div>
+        <div class="stat"><strong>Education</strong>10th: 91% • Inter: 81% • B.Tech CGPA: 8.05</div>
+        <div class="stat"><strong>Strengths</strong>Good communication, learning mindset, teamwork, problem solving</div>
+        <div class="stat"><strong>Goal</strong>Secure a job as a Java Full Stack Developer</div>
       </aside>
     </section>
 
     <section id="about" class="card">
-      <h2 class="section-title">About Me</h2>
-      <p class="subtext">I am a motivated student who enjoys learning programming, web technologies, and software development practices. I am interested in creating responsive websites, understanding how applications work, and improving my coding and communication skills for future software engineering roles.</p>
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="subtext">I am a dedicated and enthusiastic student with a strong interest in Java full stack development, software projects, communication, and continuous learning. I enjoy working on practical solutions, improving my technical skills, and contributing with confidence and discipline.</p>
+      <div class="detail-grid">
+        <div class="detail-card"><span>Phone</span>9963026322</div>
+        <div class="detail-card"><span>Email</span>msivanihoney94@gmail.com</div>
+        <div class="detail-card"><span>LinkedIn</span><a href="https://www.linkedin.com/in/m-sivani-1a540b363" target="_blank" rel="noopener">www.linkedin.com/in/m-sivani-1a540b363</a></div>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h2 class="section-title">Education</h2>
+      <div class="resume-grid">
+        <article class="item">
+          <h3>10th Standard</h3>
+          <p>Elena Bettini EMH School — 91% marks</p>
+        </article>
+        <article class="item">
+          <h3>Intermediate</h3>
+          <p>Mangal Vidyalayam, CBSE — 81% marks</p>
+        </article>
+        <article class="item">
+          <h3>B.Tech</h3>
+          <p>Mother Theresa Institute of Engineering and Technology — CGPA 8.05</p>
+        </article>
+        <article class="item">
+          <h3>Strengths</h3>
+          <p>Interested to learn new things, good at communication, Java Full Stack Developer skills</p>
+        </article>
+      </div>
     </section>
 
     <section id="skills" class="card">
       <h2 class="section-title">Skills</h2>
       <div class="grid-3">
-        <article class="item">
-          <h3>Frontend</h3>
-          <p>HTML, CSS, JavaScript, responsive UI design</p>
-        </article>
-        <article class="item">
-          <h3>Programming</h3>
-          <p>Problem solving, logic building, basic coding practice</p>
-        </article>
-        <article class="item">
-          <h3>Software Engineering</h3>
-          <p>Project planning, debugging, teamwork, clean code habits</p>
-        </article>
+        <article class="item"><h3>Java Full Stack</h3><p>Core Java, web development fundamentals, problem solving, and logical thinking.</p></article>
+        <article class="item"><h3>Frontend</h3><p>HTML, CSS, JavaScript, responsive design, and attractive UI creation.</p></article>
+        <article class="item"><h3>Soft Skills</h3><p>Good communication, teamwork, adaptability, confidence, and a strong learning attitude.</p></article>
       </div>
     </section>
 
+    <section id="experience" class="card">
+      <h2 class="section-title">Experience</h2>
+      <article class="item">
+        <h3>Top Performance Award</h3>
+        <p>Received a Top Performance Award during a 5-day internship program at IIIT-Kottayam for excellent participation and dedication.</p>
+      </article>
+    </section>
+
     <section id="projects" class="card">
-      <h2 class="section-title">Projects & Interests</h2>
+      <h2 class="section-title">Projects</h2>
       <div class="grid-2">
-        <article class="item">
-          <h3>Web Portfolio</h3>
-          <p>Creating clean and interactive web pages with HTML, CSS, and JavaScript.</p>
-        </article>
-        <article class="item">
-          <h3>Software Development</h3>
-          <p>Learning to build applications, debug issues, and improve code quality.</p>
-        </article>
+        <article class="item"><h3>1st Prize Project</h3><p>Soil moisture detection and fetal health project, recognized with 1st prize for innovation and practical impact.</p></article>
+        <article class="item"><h3>Humidity Detection</h3><p>Developed a humidity detection project focused on environmental monitoring and real-world application.</p></article>
+        <article class="item"><h3>Missile Detection</h3><p>Worked on a smart missile detection project that strengthened my technical understanding and problem-solving approach.</p></article>
+        <article class="item"><h3>Interests</h3><p>Interested to learn new things, enjoy communication, and continuously improve as a Java Full Stack Developer.</p></article>
       </div>
     </section>
 
@@ -287,8 +338,9 @@
         <div>
           <p class="subtext">Phone: <strong>9963026322</strong></p>
           <p class="subtext">Email: <strong>msivanihoney94@gmail.com</strong></p>
+          <p class="subtext">LinkedIn: <a href="https://www.linkedin.com/in/m-sivani-1a540b363" target="_blank" rel="noopener"><strong>www.linkedin.com/in/m-sivani-1a540b363</strong></a></p>
         </div>
-        <button class="btn btn-primary" id="contactBtn" type="button">Show Contact Message</button>
+        <button class="btn btn-primary" id="contactBtn" type="button">Show Resume Message</button>
       </div>
       <p id="contactMessage" class="subtext" style="margin-top: 10px;"></p>
     </section>
@@ -312,7 +364,7 @@
     });
 
     contactBtn.addEventListener('click', () => {
-      contactMessage.textContent = 'Feel free to connect with me for software engineering projects, learning opportunities, and collaboration.';
+      contactMessage.textContent = 'I am eager to contribute as a Java Full Stack Developer and grow with a professional team.';
     });
   </script>
 </body>
