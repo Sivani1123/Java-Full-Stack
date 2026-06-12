@@ -1,0 +1,19 @@
+img{
+    
+    width : 450px;
+
+}
+body{
+    background-color: peachpuff;
+}
+#content{
+    display:flex;
+    gap:1cm;
+}
+h1{
+    text-align: center;
+    color:black;
+}
+p{
+    text-align: right;
+}
